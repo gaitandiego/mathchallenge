@@ -6,8 +6,17 @@ import co.edu.poli.modelo.Nivel;
 import co.edu.poli.modelo.Nivel1;
 import co.edu.poli.modelo.Nivel2;
 import co.edu.poli.modelo.Nivel3;
+/** 
+ * clase principal del juego Math Challenge.
+ * @version 1.0
+ */
 
 public class Principal {
+	/**
+	 * metodo principal que inicia el juego
+	 * 
+	 * @param args argumentos de la linea de comandos
+	 */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -58,11 +67,14 @@ public class Principal {
     }
 
     
-    // Método para ejecutar un nivel del juego.
-    // @param sc Scanner para leer la entrada del jugador.
-    // @param nivel Objeto que representa el nivel actual.
-    //  @param jugador Objeto Jugador para actualizar los puntos.
-    // @return true si el jugador completa el nivel, false si falla.
+    /**
+     * Método para ejecutar un nivel del juego.
+     * 
+     * @param sc Scanner para leer la entrada del jugador.
+     * @param nivel Objeto que representa el nivel actual.
+     * @param jugador Objeto Jugador para actualizar los puntos.
+     * @return true si el jugador completa el nivel, false si falla.
+     */
      
     private static boolean ejecutarNivel(Scanner sc, Nivel nivel, Jugador jugador) {
         // Iterar por cada pregunta del nivel
